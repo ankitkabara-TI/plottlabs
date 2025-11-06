@@ -20,10 +20,6 @@ export default function TermsOfServicePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
 
         {/* Floating Particles */}
-        <div className="absolute top-20 left-10 w-3 h-3 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-2 h-2 bg-slate-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-green-400/60 rounded-full animate-particle-float delay-700"></div>
 
         {/* Main gradient orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
@@ -33,7 +29,7 @@ export default function TermsOfServicePage() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 animate-fade-in-up">
             <span className="text-white drop-shadow-2xl">Terms of</span>
             <br />
-            <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="text-white">
               Service
             </span>
           </h1>
@@ -501,7 +497,7 @@ export default function TermsOfServicePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">
             Questions About Our
-            <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent block">
+            <span className="text-white block">
               Terms of Service?
             </span>
           </h2>

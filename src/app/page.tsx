@@ -13,12 +13,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
 
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-3 h-3 bg-slate-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-blue-400/60 rounded-full animate-particle-float delay-700"></div>
-        <div className="absolute bottom-40 right-60 w-4 h-4 bg-orange-400/60 rounded-full animate-particle-float delay-300"></div>
 
         {/* Main gradient orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
@@ -31,7 +25,7 @@ export default function Home() {
             <div className="text-center lg:text-left animate-fade-in-left">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
                 <span className="text-white drop-shadow-2xl block">Enterprise-Grade</span>
-                <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent block">
+                <span className="text-white drop-shadow-2xl block">
                   Solutions
                 </span>
               </h1>
@@ -39,7 +33,7 @@ export default function Home() {
                 Delivered in the Cloud and built for mission-critical environments. Our platform is FedRAMP-authorized and JITC-certified, designed to meet DISA compliance criteria for federal, state, and military deployments. Simplify dispatch operations with our integrated CAD, Mapping, Mobile, and Analytics solutions—engineered to deliver secure, scalable performance for the modern era.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-xl animate-fade-in-up delay-200">
+                <Button size="lg" className="text-lg px-10 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-xl animate-fade-in-up delay-200">
                   <Link href="/contact#contact-form">Request a Demo</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-10 py-6 border-2 border-white/30 text-white hover:bg-white/10 glass hover:scale-105 transition-all duration-300 hover:shadow-xl animate-fade-in-up delay-400">
@@ -58,13 +52,13 @@ export default function Home() {
                 <div className="relative p-6 pb-4 border-b border-white/10">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-3">
-                      <div className="w-4 h-4 bg-green-400 rounded-full animate-pulse shadow-lg shadow-green-400/50"></div>
+                      <div className="w-4 h-4 bg-green-400 rounded-full shadow-lg shadow-green-400/50"></div>
                       <span className="text-sm font-semibold text-white/90">System Online</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
-                      <div className="w-2 h-2 bg-slate-400 rounded-full animate-ping delay-75"></div>
-                      <div className="w-2 h-2 bg-orange-400 rounded-full animate-ping delay-150"></div>
+                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-slate-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
                     </div>
                   </div>
                   <h3 className="text-xl font-bold text-white mb-1">OneNet Platform</h3>
@@ -77,7 +71,7 @@ export default function Home() {
                      {/* CAD System - Enhanced */}
                      <Link href="/solutions/cad" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-500/15 to-blue-600/5 border border-blue-400/20 hover:border-blue-400/40 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 block cursor-pointer">
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500"></div>
+                      <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       
                       <div className="relative p-5">
                         <div className="flex items-center justify-between mb-4">
@@ -103,9 +97,9 @@ export default function Home() {
                             <div className="flex items-center justify-between">
                               <span className="text-xs font-semibold text-white">Dispatch Control</span>
                               <div className="flex space-x-1">
-                                <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-                                <div className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse delay-75"></div>
-                                <div className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse delay-150"></div>
+                                <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
+                                <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
                               </div>
                             </div>
                           </div>
@@ -121,7 +115,7 @@ export default function Home() {
                      {/* Mobile App - Enhanced */}
                      <Link href="/solutions/mobile" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-500/15 to-blue-600/5 border border-blue-400/20 hover:border-blue-400/40 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 block cursor-pointer">
                       <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500"></div>
+                      <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       
                       <div className="relative p-5">
                         <div className="flex items-center justify-between mb-4">
@@ -147,8 +141,8 @@ export default function Home() {
                             <div className="flex items-center justify-between">
                               <span className="text-xs font-semibold text-white">Field Access</span>
                               <div className="flex space-x-1">
-                                <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-                                <div className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse delay-75"></div>
+                                <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                <div className="w-1.5 h-1.5 bg-blue-400 rounded-full"></div>
                               </div>
                             </div>
                           </div>
@@ -164,7 +158,7 @@ export default function Home() {
                      {/* Map System - Enhanced */}
                      <Link href="/solutions/map" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-500/15 to-slate-600/5 border border-slate-400/20 hover:border-slate-400/40 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 block cursor-pointer">
                       <div className="absolute inset-0 bg-gradient-to-br from-slate-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      <div className="absolute top-2 right-2 w-2 h-2 bg-slate-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500"></div>
+                      <div className="absolute top-2 right-2 w-2 h-2 bg-slate-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       
                       <div className="relative p-5">
                         <div className="flex items-center justify-between mb-4">
@@ -190,8 +184,8 @@ export default function Home() {
                             <div className="flex items-center justify-between">
                               <span className="text-xs font-semibold text-white">Live Tracking</span>
                               <div className="flex space-x-1">
-                                <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-                                <div className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-pulse delay-75"></div>
+                                <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                <div className="w-1.5 h-1.5 bg-slate-400 rounded-full"></div>
                               </div>
                             </div>
                           </div>
@@ -207,7 +201,7 @@ export default function Home() {
                      {/* Analytics - Enhanced */}
                      <Link href="/solutions/analytics" className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-green-500/15 to-green-600/5 border border-green-400/20 hover:border-green-400/40 transition-all duration-500 hover:scale-[1.02] hover:-translate-y-1 block cursor-pointer">
                       <div className="absolute inset-0 bg-gradient-to-br from-green-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                      <div className="absolute top-2 right-2 w-2 h-2 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500"></div>
+                      <div className="absolute top-2 right-2 w-2 h-2 bg-green-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       
                       <div className="relative p-5">
                         <div className="flex items-center justify-between mb-4">
@@ -233,8 +227,8 @@ export default function Home() {
                             <div className="flex items-center justify-between">
                               <span className="text-xs font-semibold text-white">Smart Insights</span>
                               <div className="flex space-x-1">
-                                <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
-                                <div className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-pulse delay-75"></div>
+                                <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                                <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
                               </div>
                             </div>
                           </div>
@@ -252,7 +246,7 @@ export default function Home() {
                   <div className="relative">
                     <div className="text-center mb-4">
                       <div className="flex items-center justify-center space-x-2 mb-2">
-                        <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-orange-500 rounded-full flex items-center justify-center animate-pulse">
+                        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                           <Zap className="w-4 h-4 text-white" />
                         </div>
                         <h4 className="text-xl font-bold text-white">Unified Command Center</h4>
@@ -323,17 +317,13 @@ export default function Home() {
       <section className="py-24 gradient-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-slate-900/10"></div>
 
-        {/* Background particles */}
-        <div className="absolute top-40 left-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-32 right-32 w-3 h-3 bg-slate-400/40 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-60 right-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float delay-500"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               One Unified Platform.
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 Four Core Tools.
               </span>
             </h2>
@@ -396,7 +386,7 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-600 to-orange-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
               Making a Real Impact
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -725,7 +715,7 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-600 to-orange-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
               Trusted Across Industries
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -878,14 +868,10 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50/30 relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/20 via-transparent to-slate-50/20"></div>
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400/40 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-3 h-3 bg-slate-400/40 rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 right-10 w-2 h-2 bg-blue-400/40 rounded-full animate-pulse delay-500"></div>
-        <div className="absolute top-1/3 left-1/4 w-2 h-2 bg-green-400/40 rounded-full animate-pulse delay-700"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-600 to-orange-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
               Complete Platform Overview
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -1151,7 +1137,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
             Ready to Transform Your Agency's
-            <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent block">
+            <span className="text-white block">
               Incident Response?
             </span>
           </h2>

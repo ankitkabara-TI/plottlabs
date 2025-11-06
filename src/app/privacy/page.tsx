@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 animate-fade-in-up">
             <span className="text-white drop-shadow-2xl">Privacy</span>
             <br />
-            <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="text-white">
               Policy
             </span>
           </h1>
@@ -459,7 +459,7 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">
             Questions About Our
-            <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent block">
+            <span className="text-white block">
               Privacy Practices?
             </span>
           </h2>

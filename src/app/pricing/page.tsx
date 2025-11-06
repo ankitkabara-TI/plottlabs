@@ -70,12 +70,6 @@ export default function Pricing() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
 
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-3 h-3 bg-slate-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-orange-400/60 rounded-full animate-particle-float delay-700"></div>
-        <div className="absolute bottom-40 right-60 w-4 h-4 bg-green-400/60 rounded-full animate-particle-float delay-300"></div>
 
         {/* Main gradient orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
@@ -89,7 +83,7 @@ export default function Pricing() {
             </span>
             <br />
             <span 
-              className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x" 
+              className="text-white animate-gradient-x" 
               style={{
                 WebkitBackgroundClip: 'text', 
                 WebkitTextFillColor: 'transparent',
@@ -110,17 +104,13 @@ export default function Pricing() {
       <section className="py-24 gradient-dark relative overflow-hidden" id="pricing-plans">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-slate-900/10"></div>
 
-        {/* Background particles */}
-        <div className="absolute top-40 left-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-32 right-32 w-3 h-3 bg-slate-400/40 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-60 right-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float delay-500"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Choose Your Plan.
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 Scale With Confidence.
               </span>
             </h2>
@@ -178,10 +168,6 @@ export default function Pricing() {
       <section className="py-24 bg-gradient-to-br from-slate-50 to-gray-100 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 via-transparent to-slate-50/30"></div>
 
-        {/* Background particles */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-20 right-20 w-3 h-3 bg-slate-400/30 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-1/2 right-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float delay-500"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
@@ -354,7 +340,7 @@ export default function Pricing() {
           {/* Bottom CTA */}
           <div className="text-center mt-16 animate-fade-in-up delay-500">
             <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-100 to-slate-100 rounded-full px-6 py-3 border border-blue-200/50">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
               <span className="text-sm font-medium text-gray-700">All features included in every plan</span>
               <Check className="w-4 h-4 text-green-600" />
             </div>
@@ -422,7 +408,7 @@ export default function Pricing() {
           <div className="relative z-10 p-8 text-center text-white">
             <h3 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in-up">
               Ready to Transform Your
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent block">
+              <span className="text-white block">
                 Agency Operations?
               </span>
             </h3>

@@ -201,7 +201,7 @@ export default function Contact() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 animate-fade-in-up">
               <span className="text-white drop-shadow-2xl">Connect With</span>
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
+              <span className="text-white animate-gradient-x">
                 Plott Labs Experts
               </span>
             </h1>
@@ -210,7 +210,7 @@ export default function Contact() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in-up delay-400">
-              <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/25 animate-glow">
+              <Button size="lg" className="text-lg px-10 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/25 animate-glow">
                 <Link href="#contact-form">Request a Demo</Link>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-10 py-6 border-2 border-white hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-white/25 animate-glow">
@@ -299,7 +299,7 @@ export default function Contact() {
           <div className="max-w-4xl mx-auto" id="contact-form">
             <Card className="glass bg-white/90 backdrop-blur-sm border-0 shadow-2xl animate-fade-in-up delay-600">
               <CardHeader className="text-center pb-8">
-                <CardTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-orange-600 bg-clip-text text-transparent mb-4">
+                <CardTitle className="text-3xl font-bold text-blue-600 mb-4">
                   Send Us a Message
                 </CardTitle>
                 <CardDescription className="text-lg text-gray-600">
@@ -391,7 +391,7 @@ export default function Contact() {
                   <div className="pt-4">
                     <Button 
                       type="submit" 
-                      className="w-full h-14 text-lg bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/25 animate-glow"
+                      className="w-full h-14 text-lg bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/25 animate-glow"
                       size="lg"
                     >
                       Request Demo
@@ -493,7 +493,7 @@ export default function Contact() {
                   <thead>
                     <tr className="border-b border-gray-200">
                       <th className="text-left p-6 text-lg font-bold text-gray-900">Feature</th>
-                      <th className="text-center p-6 text-lg font-bold bg-gradient-to-r from-blue-600 to-orange-600 bg-clip-text text-transparent">Plott Labs</th>
+                      <th className="text-center p-6 text-lg font-bold text-blue-600">Plott Labs</th>
                       <th className="text-center p-6 text-lg font-bold text-gray-600">Others</th>
                     </tr>
                   </thead>
@@ -634,7 +634,7 @@ export default function Contact() {
             <div className="animate-fade-in-right">
               <Card className="glass bg-gradient-to-br from-blue-50/80 to-slate-50/80 backdrop-blur-sm border-0 shadow-xl">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-orange-600 bg-clip-text text-transparent mb-4">
+                  <CardTitle className="text-2xl font-bold text-blue-600 mb-4">
                     Schedule a Meeting
                   </CardTitle>
                   <CardDescription className="text-gray-600">
@@ -665,7 +665,7 @@ export default function Contact() {
                     </Button>
                   </div>
                   
-                  <Button className="w-full h-12 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-xl animate-glow">
+                  <Button className="w-full h-12 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-xl animate-glow">
                     Book Executive Meeting
                     <Calendar className="w-5 h-5 ml-2" />
                   </Button>
@@ -701,7 +701,7 @@ export default function Contact() {
             Join 100+ agencies already transforming emergency response with Plott Labs' cloud-native platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up delay-400">
-            <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/25 animate-glow animate-pulse">
+            <Button size="lg" className="text-lg px-10 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/25 animate-glow animate-pulse">
               <Link href="#contact-form">Book a Demo</Link>
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-10 py-6 border-2 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-white/25 animate-glow">

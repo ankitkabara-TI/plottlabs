@@ -18,11 +18,6 @@ export default function SolutionsPage() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
         
-        {/* Floating particles */}
-        <div className="absolute top-20 left-10 w-3 h-3 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-2 h-2 bg-slate-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-green-400/60 rounded-full animate-particle-float delay-700"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center z-10">
           <div className="mb-6">
@@ -35,7 +30,7 @@ export default function SolutionsPage() {
               One Unified Platform.
             </span>
             <br />
-            <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
+            <span className="text-white">
               Four Core Tools.
             </span>
           </h1>
@@ -52,7 +47,7 @@ export default function SolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 One Platform.
               </span>
               <br />
@@ -101,13 +96,9 @@ export default function SolutionsPage() {
           <div className="text-center animate-fade-in-up delay-600">
             <div className="glass rounded-2xl border border-white/10 p-8 max-w-2xl mx-auto">
               <div className="flex items-center justify-center space-x-4 mb-4">
-                <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
                 <div className="w-8 h-px bg-gradient-to-r from-blue-400 to-slate-400"></div>
-                <div className="w-3 h-3 bg-slate-400 rounded-full animate-pulse delay-200"></div>
                 <div className="w-8 h-px bg-gradient-to-r from-slate-400 to-blue-400"></div>
-                <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse delay-400"></div>
                 <div className="w-8 h-px bg-gradient-to-r from-blue-400 to-green-400"></div>
-                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse delay-600"></div>
               </div>
               <p className="text-white font-semibold text-lg">Seamlessly Connected Ecosystem</p>
             </div>
@@ -717,7 +708,7 @@ export default function SolutionsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
             Experience the
-            <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent block">
+            <span className="text-white block">
               Full Platform
             </span>
           </h2>

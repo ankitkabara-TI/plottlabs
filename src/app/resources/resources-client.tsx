@@ -275,16 +275,6 @@ export function ResourcesClient() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
         
-        {/* Floating particles */}
-        <div className="absolute top-20 left-10 w-3 h-3 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-2 h-2 bg-slate-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-green-400/60 rounded-full animate-particle-float delay-700"></div>
-        
-        {/* Additional floating elements */}
-        <div className="absolute top-32 left-1/4 w-2 h-2 bg-yellow-400/50 rounded-full animate-particle-float delay-300"></div>
-        <div className="absolute bottom-40 right-1/3 w-3 h-3 bg-orange-400/50 rounded-full animate-particle-float delay-800"></div>
-        <div className="absolute top-1/2 left-10 w-1 h-1 bg-white/40 rounded-full animate-particle-float delay-1200"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -292,7 +282,7 @@ export function ResourcesClient() {
             <div className="text-center lg:text-left animate-fade-in-left">
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
                 <span className="text-white drop-shadow-2xl block">Insights &</span>
-                <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent block">
+                <span className="text-white block">
                   Resources
                 </span>
               </h1>
@@ -300,7 +290,7 @@ export function ResourcesClient() {
                 Stay informed with expert blogs, whitepapers, and tutorials focused on emergency response technologies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-xl animate-fade-in-up delay-200">
+                <Button size="lg" className="text-lg px-10 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-xl animate-fade-in-up delay-200">
                   <Link href="#content">Explore Resources</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-10 py-6 border-2 border-white/30 text-white hover:bg-white/10 glass hover:scale-105 transition-all duration-300 hover:shadow-xl animate-fade-in-up delay-400">
@@ -427,7 +417,7 @@ export function ResourcesClient() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                   <div>
                     <div className="flex items-center mb-4">
-                      <Badge className="bg-gradient-to-r from-blue-500 to-orange-500 text-white">
+                      <Badge className="bg-blue-500 text-white">
                         Featured Article
                       </Badge>
                       <span className="ml-4 text-gray-300">{featuredArticle.date}</span>
@@ -448,7 +438,7 @@ export function ResourcesClient() {
                         <span>{new Date(featuredArticle.date).toLocaleDateString('en-US', { year: 'numeric', month: 'numeric', day: 'numeric' })}</span>
                       </div>
                     </div>
-                    <Button size="lg" className="bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300">
+                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300">
                       <Link href="#" className="flex items-center space-x-2">
                         <span>Read Full Article</span>
                         <ArrowRight className="w-4 h-4" />
@@ -604,11 +594,6 @@ export function ResourcesClient() {
 
       {/* Interactive Callouts */}
       <section className="py-24 gradient-dark relative overflow-hidden">
-        {/* Background particles */}
-        <div className="absolute top-20 left-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-32 right-32 w-3 h-3 bg-slate-400/40 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-60 right-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute bottom-40 left-1/3 w-2 h-2 bg-green-400/40 rounded-full animate-particle-float delay-800"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
@@ -666,7 +651,7 @@ export function ResourcesClient() {
             Need a Demo? Explore our one-on-one walkthroughs and see how Plott Labs can transform your emergency response operations.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up delay-400">
-            <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-xl group">
+            <Button size="lg" className="text-lg px-10 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-xl group">
               <Link href="/contact#contact-form" className="flex items-center space-x-2">
                 <span>Request Demo</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />

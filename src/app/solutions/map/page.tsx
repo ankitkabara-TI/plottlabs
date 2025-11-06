@@ -19,11 +19,6 @@ export default function MapPage() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
         
-        {/* Floating particles */}
-        <div className="absolute top-20 left-10 w-3 h-3 bg-slate-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-4 h-4 bg-green-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-blue-400/60 rounded-full animate-particle-float delay-700"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -36,7 +31,7 @@ export default function MapPage() {
                   <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl">
                     Interactive
                     <br />
-                    <span className="bg-gradient-to-r from-slate-400 via-orange-400 to-blue-400 bg-clip-text text-transparent">
+                    <span className="text-white">
                       Incident Mapping
                     </span>
                   </h1>
@@ -48,7 +43,7 @@ export default function MapPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-slate-600 to-orange-600 hover:from-slate-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 shadow-2xl">
+                <Button size="lg" className="text-lg px-8 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 shadow-2xl">
                   <Link href="/contact#contact-form">See Map in Action</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-white/30 text-white hover:bg-white/10 glass hover:scale-105 transition-all duration-300">
@@ -100,7 +95,7 @@ export default function MapPage() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Visualizing Incidents Across
               <br />
-              <span className="bg-gradient-to-r from-slate-400 via-orange-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="text-white">
                 an Airport Campus
               </span>
             </h2>
@@ -291,7 +286,7 @@ export default function MapPage() {
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
                 Enhanced
                 <br />
-                <span className="bg-gradient-to-r from-slate-400 via-orange-400 to-blue-400 bg-clip-text text-transparent">
+                <span className="text-white">
                   Situational Awareness
                 </span>
               </h2>
@@ -354,9 +349,9 @@ export default function MapPage() {
                     {/* Top Status Bar */}
                     <div className="absolute top-2 left-2 right-2 h-8 bg-black/30 rounded flex items-center px-3">
                       <div className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
-                        <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse delay-200"></div>
-                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse delay-400"></div>
+                        <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                        <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                        <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       </div>
                       <div className="flex-1 text-center text-xs text-white/80 font-semibold">Live Emergency Response Map</div>
                       <div className="w-4 h-4 bg-white/20 rounded"></div>
@@ -388,16 +383,16 @@ export default function MapPage() {
                       </div>
                       
                       {/* Incident Markers with Realistic Icons */}
-                      <div className="absolute top-1/4 left-1/3 w-5 h-5 bg-red-500 rounded-full animate-pulse shadow-lg flex items-center justify-center">
+                      <div className="absolute top-1/4 left-1/3 w-5 h-5 bg-red-500 rounded-full shadow-lg flex items-center justify-center">
                         <span className="text-xs text-white">🚒</span>
                       </div>
-                      <div className="absolute top-1/2 right-1/3 w-5 h-5 bg-yellow-500 rounded-full animate-pulse delay-500 shadow-lg flex items-center justify-center">
+                      <div className="absolute top-1/2 right-1/3 w-5 h-5 bg-yellow-500 rounded-full shadow-lg flex items-center justify-center">
                         <span className="text-xs text-white">⚠️</span>
                       </div>
-                      <div className="absolute bottom-1/4 left-1/2 w-5 h-5 bg-green-500 rounded-full animate-pulse delay-1000 shadow-lg flex items-center justify-center">
+                      <div className="absolute bottom-1/4 left-1/2 w-5 h-5 bg-green-500 rounded-full shadow-lg flex items-center justify-center">
                         <span className="text-xs text-white">🚑</span>
                       </div>
-                      <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-blue-500 rounded-full animate-bounce shadow-lg flex items-center justify-center">
+                      <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-blue-500 rounded-full shadow-lg flex items-center justify-center">
                         <span className="text-xs text-white">👮</span>
                       </div>
                       
@@ -420,19 +415,19 @@ export default function MapPage() {
                       <div className="space-y-2 text-xs">
                         <div className="flex items-center justify-between text-white/60">
                           <span>Fire Stations</span>
-                          <div className="w-2 h-2 bg-red-400 rounded-full animate-pulse"></div>
+                          <div className="w-2 h-2 bg-red-400 rounded-full"></div>
                         </div>
                         <div className="flex items-center justify-between text-white/60">
                           <span>Police Units</span>
-                          <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-200"></div>
+                          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                         </div>
                         <div className="flex items-center justify-between text-white/60">
                           <span>EMS Units</span>
-                          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse delay-400"></div>
+                          <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                         </div>
                         <div className="flex items-center justify-between text-white/60">
                           <span>Weather</span>
-                          <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse delay-600"></div>
+                          <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
                         </div>
                         <div className="flex items-center justify-between text-white/60">
                           <span>Traffic</span>
@@ -459,7 +454,7 @@ export default function MapPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
             Transform Your
-            <span className="bg-gradient-to-r from-slate-400 via-orange-400 to-blue-400 bg-clip-text text-transparent block">
+            <span className="text-white block">
               Situational Awareness
             </span>
           </h2>

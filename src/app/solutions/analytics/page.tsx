@@ -12,11 +12,6 @@ export default function AnalyticsPage() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
         
-        {/* Floating particles */}
-        <div className="absolute top-20 left-10 w-3 h-3 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-slate-400/60 rounded-full animate-particle-float delay-700"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -29,7 +24,7 @@ export default function AnalyticsPage() {
                   <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl">
                     Analytics &
                     <br />
-                    <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+                    <span className="text-white">
                       Reporting
                     </span>
                   </h1>
@@ -41,7 +36,7 @@ export default function AnalyticsPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
-                <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 shadow-2xl">
+                <Button size="lg" className="text-lg px-8 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 shadow-2xl">
                   <Link href="/contact#contact-form">Request Analytics Demo</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-white/30 text-white hover:bg-white/10 glass hover:scale-105 transition-all duration-300">
@@ -104,7 +99,7 @@ export default function AnalyticsPage() {
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Comprehensive Analytics.
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 Actionable Insights.
               </span>
             </h2>
@@ -245,7 +240,7 @@ export default function AnalyticsPage() {
                   </div>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                   <span className="text-blue-400 text-xs font-medium">LIVE</span>
                 </div>
               </div>
@@ -447,7 +442,7 @@ export default function AnalyticsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
             Unlock the Power of Your
-            <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent block">
+            <span className="text-white block">
               Data Analytics
             </span>
           </h2>

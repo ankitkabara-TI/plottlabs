@@ -44,12 +44,6 @@ export default function MobilePage() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
 
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-3 h-3 bg-slate-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-orange-400/60 rounded-full animate-particle-float delay-700"></div>
-        <div className="absolute bottom-40 right-60 w-4 h-4 bg-green-400/60 rounded-full animate-particle-float delay-300"></div>
 
         {/* Main gradient orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
@@ -70,7 +64,7 @@ export default function MobilePage() {
                   Field Operations in Your
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
+                <span className="text-white">
                   Pocket
                 </span>
               </h1>
@@ -83,7 +77,7 @@ export default function MobilePage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-start mb-8 animate-fade-in-up delay-700">
-                <Button size="lg" className="text-base px-8 py-5 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl shadow-lg animate-glow">
+                <Button size="lg" className="text-base px-8 py-5 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl shadow-lg">
                   <Link href="/contact#contact-form">Request Demo</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-base px-8 py-5 border-2 border-white/30 text-white hover:bg-white/10 glass hover:scale-105 transition-all duration-300 hover:shadow-2xl">
@@ -152,9 +146,6 @@ export default function MobilePage() {
                           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-slate-900/50 rounded-2xl">
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-shimmer"></div>
                             {/* Simulated Map Points */}
-                            <div className="absolute top-6 left-8 w-3 h-3 bg-red-400 rounded-full animate-pulse"></div>
-                            <div className="absolute top-12 right-12 w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-300"></div>
-                            <div className="absolute bottom-8 left-16 w-2 h-2 bg-green-400 rounded-full animate-pulse delay-500"></div>
                             <div className="text-center pt-16 relative z-10">
                               <MapPin className="w-8 h-8 text-blue-400 mx-auto mb-2" />
                               <p className="text-gray-300 text-sm">Live Incident Map</p>
@@ -201,17 +192,13 @@ export default function MobilePage() {
       <section className="py-24 gradient-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-slate-900/10"></div>
 
-        {/* Background particles */}
-        <div className="absolute top-40 left-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-32 right-32 w-3 h-3 bg-slate-400/40 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-60 right-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float delay-500"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Built for Critical
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 Operations
               </span>
             </h2>
@@ -291,7 +278,7 @@ export default function MobilePage() {
               </Badge>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
                 Fire Department Reduces Response Time by
-                <span className="block bg-gradient-to-r from-blue-600 via-orange-600 to-blue-600 bg-clip-text text-transparent">
+                <span className="block text-blue-600">
                   40%
                 </span>
               </h2>
@@ -314,7 +301,7 @@ export default function MobilePage() {
                   ))}
                 </div>
               </div>
-              <Button className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 hover:scale-105 transition-all duration-300">
+              <Button className="bg-green-600 hover:bg-green-700 hover:scale-105 transition-all duration-300">
                 <Link href="/case-studies#featured-cases">Read Full Case Study</Link>
               </Button>
             </div>
@@ -354,7 +341,7 @@ export default function MobilePage() {
                       <span className="text-gray-900">92%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-green-500 to-emerald-500 h-2 rounded-full w-[92%] animate-pulse"></div>
+                      <div className="bg-green-500 h-2 rounded-full w-[92%]"></div>
                     </div>
                   </div>
                 </div>
@@ -374,7 +361,7 @@ export default function MobilePage() {
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
                 Real-time Call
                 <br />
-                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                <span className="text-white">
                   Management
                 </span>
               </h2>
@@ -384,24 +371,24 @@ export default function MobilePage() {
 
               <div className="grid grid-cols-2 gap-6 mb-10">
                 <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 animate-glow">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Active</div>
+                  <div className="text-4xl font-bold text-blue-400 mb-2">Active</div>
                   <div className="text-sm text-gray-300">Live Incidents</div>
                 </div>
                 <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 animate-glow delay-100">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-2">Closed</div>
+                  <div className="text-4xl font-bold text-green-400 mb-2">Closed</div>
                   <div className="text-sm text-gray-300">Resolved Cases</div>
                 </div>
                 <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 animate-glow delay-200">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent mb-2">Pending</div>
+                  <div className="text-4xl font-bold text-orange-400 mb-2">Pending</div>
                   <div className="text-sm text-gray-300">Awaiting Response</div>
                 </div>
                 <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 animate-glow delay-300">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent mb-2">Assigned</div>
+                  <div className="text-4xl font-bold text-red-400 mb-2">Assigned</div>
                   <div className="text-sm text-gray-300">Units Deployed</div>
                 </div>
               </div>
 
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 transition-all duration-300 shadow-2xl">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 shadow-2xl">
                 <Link href="/contact#contact-form">View Dashboard Demo</Link>
               </Button>
             </div>
@@ -469,7 +456,7 @@ export default function MobilePage() {
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
                 Real-time
                 <br />
-                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                <span className="text-white">
                   Navigation
                 </span>
               </h2>
@@ -479,24 +466,24 @@ export default function MobilePage() {
 
               <div className="grid grid-cols-2 gap-6 mb-10">
                 <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 animate-glow">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">Live</div>
+                  <div className="text-4xl font-bold text-blue-400 mb-2">Live</div>
                   <div className="text-sm text-gray-300">Route Tracking</div>
                 </div>
                 <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 animate-glow delay-100">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent mb-2">Weather</div>
+                  <div className="text-4xl font-bold text-green-400 mb-2">Weather</div>
                   <div className="text-sm text-gray-300">Conditions</div>
                 </div>
                 <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 animate-glow delay-200">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent mb-2">Layers</div>
+                  <div className="text-4xl font-bold text-orange-400 mb-2">Layers</div>
                   <div className="text-sm text-gray-300">Map Views</div>
                 </div>
                 <div className="glass rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 animate-glow delay-300">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent mb-2">ETA</div>
+                  <div className="text-4xl font-bold text-red-400 mb-2">ETA</div>
                   <div className="text-sm text-gray-300">Arrival Time</div>
                 </div>
               </div>
 
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 transition-all duration-300 shadow-2xl">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 shadow-2xl">
                 <Link href="/contact#contact-form">View Map Demo</Link>
               </Button>
             </div>
@@ -509,10 +496,6 @@ export default function MobilePage() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
 
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-10 w-3 h-3 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-20 right-20 w-2 h-2 bg-slate-400/60 rounded-full animate-particle-float delay-700"></div>
-        <div className="absolute top-32 right-40 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float delay-300"></div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white drop-shadow-2xl animate-fade-in-up">
@@ -523,7 +506,7 @@ export default function MobilePage() {
             Request a customized demo for your organization.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-500">
-            <Button size="lg" className="text-base px-8 py-5 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl shadow-lg animate-glow">
+            <Button size="lg" className="text-base px-8 py-5 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl shadow-lg">
               <Link href="/contact#contact-form">Schedule Demo</Link>
             </Button>
             <Button variant="outline" size="lg" className="text-base px-8 py-5 border-2 border-white/30 text-white hover:bg-white/10 glass hover:scale-105 transition-all duration-300 hover:shadow-2xl">

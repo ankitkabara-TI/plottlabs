@@ -13,12 +13,6 @@ export default function OneNetPage() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
 
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-3 h-3 bg-gray-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-slate-400/60 rounded-full animate-particle-float delay-700"></div>
-        <div className="absolute bottom-40 right-60 w-4 h-4 bg-green-400/60 rounded-full animate-particle-float delay-300"></div>
 
         {/* Main gradient orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
@@ -29,14 +23,14 @@ export default function OneNetPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
               <div className="flex items-center mb-6">
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-orange-600 rounded-2xl flex items-center justify-center mr-6 shadow-2xl animate-glow">
+                <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mr-6 shadow-2xl">
                   <Cloud className="w-10 h-10 text-white" />
                 </div>
                 <div>
                   <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-2xl">
                     OneNet
                   </h1>
-                  <p className="text-xl bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x mt-2">
+                  <p className="text-xl text-white mt-2">
                     Unified. Secure. Interoperable.
                   </p>
                 </div>
@@ -52,7 +46,7 @@ export default function OneNetPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up delay-500">
-                <Button size="lg" className="text-base px-8 py-5 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl shadow-lg animate-glow">
+                <Button size="lg" className="text-base px-8 py-5 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl shadow-lg">
                   <Link href="/contact#contact-form">Request OneNet Demo</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-base px-8 py-5 border-2 border-white/30 text-white hover:bg-white/10 glass hover:scale-105 transition-all duration-300 hover:shadow-2xl">
@@ -105,17 +99,13 @@ export default function OneNetPage() {
       <section className="py-24 gradient-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-slate-900/10"></div>
 
-        {/* Background particles */}
-        <div className="absolute top-40 left-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-32 right-32 w-3 h-3 bg-slate-400/40 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-60 right-20 w-2 h-2 bg-blue-400/40 rounded-full animate-particle-float delay-500"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Built on Three
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 Core Principles
               </span>
             </h2>
@@ -197,9 +187,6 @@ export default function OneNetPage() {
 
               
               {/* Sync Wave Animation */}
-              <div className="absolute top-6 left-6 w-8 h-8 border-2 border-blue-400/30 rounded-full opacity-0 group-hover:opacity-100 animate-ping delay-200"></div>
-              <div className="absolute top-6 left-6 w-12 h-12 border-2 border-blue-400/20 rounded-full opacity-0 group-hover:opacity-100 animate-ping delay-500"></div>
-              <div className="absolute top-6 left-6 w-16 h-16 border border-blue-400/10 rounded-full opacity-0 group-hover:opacity-100 animate-ping delay-800"></div>
               
               {/* Data Flow Lines */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-500">

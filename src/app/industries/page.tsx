@@ -257,23 +257,6 @@ export default function IndustriesPage() {
       {/* Hero Section - Industry Focused */}
       <section className="relative min-h-[100vh] flex items-center justify-center gradient-mesh animate-rotate-gradient overflow-hidden">
         <div className="absolute inset-0 bg-black/60"></div>
-        
-        {/* Industry Icons Floating */}
-        <div className="absolute top-20 left-20 w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center animate-float">
-          <Shield className="w-8 h-8 text-blue-400" />
-        </div>
-        <div className="absolute top-40 right-32 w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center animate-float delay-1000">
-          <Flame className="w-8 h-8 text-red-400" />
-        </div>
-        <div className="absolute bottom-40 left-32 w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center animate-float delay-500">
-          <Building className="w-8 h-8 text-green-400" />
-        </div>
-        <div className="absolute top-60 right-20 w-16 h-16 bg-slate-500/20 rounded-full flex items-center justify-center animate-float delay-700">
-          <Factory className="w-8 h-8 text-slate-400" />
-        </div>
-        <div className="absolute bottom-20 right-40 w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center animate-float delay-300">
-          <Wrench className="w-8 h-8 text-orange-400" />
-        </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 z-10">
           <div className="text-center">
@@ -281,7 +264,7 @@ export default function IndustriesPage() {
               <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-8">
                 <span className="text-white drop-shadow-2xl">Who We</span>
                 <br />
-                <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
+                <span className="text-white">
                   Serve
                 </span>
               </h1>
@@ -293,19 +276,19 @@ export default function IndustriesPage() {
             {/* Industry Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto animate-fade-in-up delay-500">
               <div className="glass rounded-2xl border border-white/20 p-6 backdrop-blur-sm hover:scale-105 transition-all duration-300">
-                <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-orange-500 bg-clip-text text-transparent mb-2">15+</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">15+</div>
                 <div className="text-gray-300 text-sm">Industries Served</div>
               </div>
               <div className="glass rounded-2xl border border-white/20 p-6 backdrop-blur-sm hover:scale-105 transition-all duration-300">
-                <div className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent mb-2">500+</div>
+                <div className="text-4xl font-bold text-orange-500 mb-2">500+</div>
                 <div className="text-gray-300 text-sm">Organizations</div>
               </div>
               <div className="glass rounded-2xl border border-white/20 p-6 backdrop-blur-sm hover:scale-105 transition-all duration-300">
-                <div className="text-4xl font-bold bg-gradient-to-r from-green-400 to-orange-500 bg-clip-text text-transparent mb-2">99.9%</div>
+                <div className="text-4xl font-bold text-green-400 mb-2">99.9%</div>
                 <div className="text-gray-300 text-sm">Uptime</div>
               </div>
               <div className="glass rounded-2xl border border-white/20 p-6 backdrop-blur-sm hover:scale-105 transition-all duration-300">
-                <div className="text-4xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent mb-2">$50M+</div>
+                <div className="text-4xl font-bold text-orange-400 mb-2">$50M+</div>
                 <div className="text-gray-300 text-sm">Cost Savings</div>
               </div>
             </div>
@@ -356,10 +339,10 @@ export default function IndustriesPage() {
                       {/* Header with Icon and Title */}
                       <div className="flex items-start justify-between mb-6">
                         <div className={`w-20 h-20 bg-gradient-to-br ${getColorClasses(industry.color)} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-xl`}>
-                          <Icon className="w-10 h-10 text-white group-hover:animate-pulse" />
+                          <Icon className="w-10 h-10 text-white" />
                         </div>
                         <div className="text-right">
-                          <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-slate-600 bg-clip-text text-transparent">
+                          <div className="text-3xl font-bold text-blue-600">
                             {index + 1}
                           </div>
                           <div className="text-sm text-gray-500">Industry</div>
@@ -379,7 +362,7 @@ export default function IndustriesPage() {
                         {industry.benefits.map((benefit, idx) => (
                           <div key={benefit} className="flex items-center space-x-3 group-hover:translate-x-2 transition-transform duration-300" style={{ transitionDelay: `${idx * 100}ms` }}>
                             <div className="w-6 h-6 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                              <CheckCircle className="w-4 h-4 text-white group-hover:animate-pulse" />
+                              <CheckCircle className="w-4 h-4 text-white" />
                             </div>
                             <span className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">{benefit}</span>
                           </div>
@@ -425,7 +408,7 @@ export default function IndustriesPage() {
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
               Industry Challenges
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 We Solve
               </span>
             </h2>
@@ -490,7 +473,7 @@ export default function IndustriesPage() {
                         <div className="glass rounded-3xl border border-white/10 p-8 group hover:border-white/20 hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 hover:scale-[1.02]">
                           <div className="flex items-center mb-6">
                             <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                              <AlertTriangle className="w-8 h-8 text-white group-hover:animate-pulse" />
+                              <AlertTriangle className="w-8 h-8 text-white" />
                             </div>
                             <div>
                               <h3 className="text-2xl font-bold text-white group-hover:text-gray-100 transition-colors duration-300">
@@ -505,11 +488,11 @@ export default function IndustriesPage() {
                           {/* Challenge Indicators */}
                           <div className="mt-6 flex items-center space-x-4">
                             <div className="flex items-center space-x-2 text-orange-400">
-                              <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></div>
+                              <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
                               <span className="text-sm">Critical Issue</span>
                             </div>
                             <div className="flex items-center space-x-2 text-orange-400">
-                              <div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse delay-100"></div>
+                              <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
                               <span className="text-sm">High Impact</span>
                             </div>
                           </div>
@@ -530,7 +513,7 @@ export default function IndustriesPage() {
                         <div className="glass rounded-3xl border border-white/10 p-8 group hover:border-white/20 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:scale-[1.02]">
                           <div className="flex items-center mb-6">
                             <div className={`w-16 h-16 bg-gradient-to-br ${getColorClasses(item.color)} rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                              <Icon className="w-8 h-8 text-white group-hover:animate-pulse" />
+                              <Icon className="w-8 h-8 text-white" />
                             </div>
                             <div>
                               <h3 className="text-2xl font-bold text-white group-hover:text-gray-100 transition-colors duration-300">
@@ -670,7 +653,7 @@ export default function IndustriesPage() {
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
               Tailored Solutions
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 For Every Industry
               </span>
             </h2>
@@ -714,15 +697,15 @@ export default function IndustriesPage() {
                     <div className={`w-1/2 ${industry.position === 'right' ? 'pl-8' : 'pr-8'}`}>
                       <div className="glass rounded-3xl border border-white/10 p-8 group hover:border-white/20 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:scale-[1.02]">
                         <div className="flex items-center mb-6">
-                          <div className={`w-16 h-16 bg-gradient-to-br ${getColorClasses(industry.color)} rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300 animate-glow`}>
-                            <Icon className="w-8 h-8 text-white group-hover:animate-pulse" />
+                          <div className={`w-16 h-16 bg-gradient-to-br ${getColorClasses(industry.color)} rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300`}>
+                            <Icon className="w-8 h-8 text-white" />
                           </div>
                           <h3 className="text-2xl font-bold text-white group-hover:text-gray-100 transition-colors duration-300">{industry.industry}</h3>
                         </div>
                         <div className="grid grid-cols-2 gap-3">
                           {industry.solutions.map((solution, idx) => (
                             <div key={idx} className="flex items-center space-x-2 text-sm text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                              <CheckCircle className="w-4 h-4 text-green-400 group-hover:animate-pulse" />
+                              <CheckCircle className="w-4 h-4 text-green-400" />
                               <span>{solution}</span>
                             </div>
                           ))}
@@ -731,7 +714,7 @@ export default function IndustriesPage() {
                     </div>
                     
                     {/* Timeline Dot */}
-                    <div className={`w-8 h-8 bg-gradient-to-br ${getColorClasses(industry.color)} rounded-full flex items-center justify-center z-10 shadow-lg animate-glow`}>
+                    <div className={`w-8 h-8 bg-gradient-to-br ${getColorClasses(industry.color)} rounded-full flex items-center justify-center z-10 shadow-lg`}>
                       <div className="w-4 h-4 bg-white rounded-full"></div>
                     </div>
                     
@@ -813,7 +796,7 @@ export default function IndustriesPage() {
               { number: "24/7", label: "Support Available" }
             ].map((stat, index) => (
               <div key={stat.label} className="text-center animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-                <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-slate-600 bg-clip-text text-transparent mb-2">{stat.number}</div>
+                <div className="text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
                 <div className="text-gray-600">{stat.label}</div>
               </div>
             ))}
@@ -830,7 +813,7 @@ export default function IndustriesPage() {
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
               Your Industry's
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent">
+              <span className="text-white">
                 Transformation Journey
               </span>
             </h2>
@@ -900,30 +883,13 @@ export default function IndustriesPage() {
       {/* Industry-Focused CTA */}
       <section className="py-24 gradient-mesh animate-rotate-gradient relative overflow-hidden">
         <div className="absolute inset-0 bg-black/70"></div>
-        
-        {/* Industry Icons Floating */}
-        <div className="absolute top-20 left-20 w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center animate-float">
-          <Shield className="w-8 h-8 text-blue-400" />
-        </div>
-        <div className="absolute top-40 right-32 w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center animate-float delay-1000">
-          <Flame className="w-8 h-8 text-red-400" />
-        </div>
-        <div className="absolute bottom-40 left-32 w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center animate-float delay-500">
-          <Building className="w-8 h-8 text-green-400" />
-        </div>
-        <div className="absolute top-60 right-20 w-16 h-16 bg-slate-500/20 rounded-full flex items-center justify-center animate-float delay-700">
-          <Factory className="w-8 h-8 text-slate-400" />
-        </div>
-        <div className="absolute bottom-20 right-40 w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center animate-float delay-300">
-          <Wrench className="w-8 h-8 text-orange-400" />
-        </div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
           <div className="animate-fade-in-up">
             <h2 className="text-5xl md:text-7xl font-bold mb-8">
               <span className="text-white drop-shadow-2xl">Ready to Transform</span>
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
+              <span className="text-white">
                 Your Industry?
               </span>
             </h2>

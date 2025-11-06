@@ -234,13 +234,6 @@ export default function CaseStudiesPage() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
 
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-3 h-3 bg-slate-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-green-400/60 rounded-full animate-particle-float delay-700"></div>
-        <div className="absolute bottom-40 right-60 w-4 h-4 bg-gray-400/60 rounded-full animate-particle-float delay-300"></div>
-        <div className="absolute top-1/3 left-1/4 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-900"></div>
 
         {/* Main gradient orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
@@ -253,7 +246,7 @@ export default function CaseStudiesPage() {
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
                 <span className="text-white drop-shadow-2xl">Real Stories.</span>
                 <br />
-                <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
+                <span className="text-white">
                   Real Impact.
                 </span>
               </h1>
@@ -261,7 +254,7 @@ export default function CaseStudiesPage() {
                 See how agencies transformed response times and security outcomes with Plott Labs' cloud-native platform.
               </p>
               <div className="animate-fade-in-up delay-400">
-                <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/25 animate-glow">
+                <Button size="lg" className="text-lg px-10 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
                   <Link href="#featured-cases">Explore Case Studies</Link>
                 </Button>
               </div>
@@ -271,25 +264,25 @@ export default function CaseStudiesPage() {
               <div className="relative">
                 <div className="glass rounded-2xl border border-white/20 p-8 backdrop-blur-sm hover:scale-105 transition-all duration-500 animate-scale-in delay-700">
                   <div className="text-center">
-                    <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-blue-600 to-orange-600 rounded-2xl flex items-center justify-center shadow-2xl animate-glow">
-                      <BarChart3 className="w-12 h-12 text-white animate-pulse" />
+                    <div className="w-24 h-24 mx-auto mb-6 bg-blue-600 rounded-2xl flex items-center justify-center shadow-2xl">
+                      <BarChart3 className="w-12 h-12 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-4">Success Metrics</h3>
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
-                        <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-orange-500 bg-clip-text text-transparent">40-60%</div>
+                        <div className="text-3xl font-bold text-blue-400">40-60%</div>
                         <div className="text-gray-300 text-sm">Faster Response</div>
                       </div>
                       <div>
-                        <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">99.9%</div>
+                        <div className="text-3xl font-bold text-orange-500">99.9%</div>
                         <div className="text-gray-300 text-sm">Uptime</div>
                       </div>
                       <div>
-                        <div className="text-3xl font-bold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">$2M+</div>
+                        <div className="text-3xl font-bold text-green-400">$2M+</div>
                         <div className="text-gray-300 text-sm">Cost Savings</div>
                       </div>
                       <div>
-                        <div className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">15+</div>
+                        <div className="text-3xl font-bold text-orange-400">15+</div>
                         <div className="text-gray-300 text-sm">Agencies</div>
                       </div>
                     </div>
@@ -327,8 +320,8 @@ export default function CaseStudiesPage() {
                       {/* Background gradient overlay on hover */}
                       <div className={`absolute inset-0 bg-gradient-to-br ${colors.hoverBg} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-lg`}></div>
                       
-                      <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${colors.bg} group-hover:bg-gradient-to-br group-hover:${colors.hoverBg} rounded-xl flex items-center justify-center group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 shadow-lg group-hover:shadow-xl animate-glow`}>
-                        <Icon className={`w-8 h-8 ${colors.text} group-hover:${colors.hoverText} transition-all duration-300 group-hover:animate-bounce`} />
+                      <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${colors.bg} group-hover:bg-gradient-to-br group-hover:${colors.hoverBg} rounded-xl flex items-center justify-center group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 shadow-lg group-hover:shadow-xl`}>
+                        <Icon className={`w-8 h-8 ${colors.text} group-hover:${colors.hoverText} transition-all duration-300`} />
                       </div>
                       
                       <div className="relative">
@@ -352,10 +345,6 @@ export default function CaseStudiesPage() {
 
       {/* Featured Case Studies */}
       <section id="featured-cases" className="py-24 gradient-dark relative overflow-hidden">
-        {/* Background particles */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-20 right-20 w-3 h-3 bg-slate-400/30 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-1/2 right-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float delay-500"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-fade-in-up">
@@ -373,8 +362,8 @@ export default function CaseStudiesPage() {
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''} animate-fade-in-left`}>
                   <div className="glass rounded-2xl border border-white/10 p-8 group hover:border-white/20 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:scale-[1.02]">
                     <div className="flex items-center mb-6">
-                      <div className={`w-12 h-12 bg-gradient-to-br ${getColorClasses(study.color)} rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 animate-glow`}>
-                        <Building2 className="w-6 h-6 text-white group-hover:animate-pulse" />
+                      <div className={`w-12 h-12 bg-gradient-to-br ${getColorClasses(study.color)} rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300`}>
+                        <Building2 className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold text-white group-hover:text-gray-100 transition-colors duration-300">{study.title}</h3>
@@ -385,7 +374,7 @@ export default function CaseStudiesPage() {
                     <div className="space-y-6">
                       <div>
                         <h4 className="text-lg font-semibold text-white mb-2 flex items-center group-hover:text-gray-100 transition-colors duration-300">
-                          <span className="w-2 h-2 bg-red-500 rounded-full mr-3 animate-pulse"></span>
+                          <span className="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
                           The Problem
                         </h4>
                         <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">{study.problem}</p>
@@ -393,7 +382,7 @@ export default function CaseStudiesPage() {
 
                       <div>
                         <h4 className="text-lg font-semibold text-white mb-2 flex items-center group-hover:text-gray-100 transition-colors duration-300">
-                          <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse delay-100"></span>
+                          <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
                           The Solution
                         </h4>
                         <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">{study.solution}</p>
@@ -408,8 +397,8 @@ export default function CaseStudiesPage() {
                     <div className="grid grid-cols-2 gap-6">
                       {Object.entries(study.outcome).map(([key, value], idx) => (
                         <div key={key} className="text-center group/metric hover:scale-105 transition-transform duration-300">
-                          <div className={`w-16 h-16 mx-auto mb-3 bg-gradient-to-br ${getColorClasses(study.color)} rounded-2xl flex items-center justify-center group-hover/metric:scale-110 transition-transform duration-300 animate-glow`}>
-                            <TrendingUp className="w-8 h-8 text-white group-hover/metric:animate-bounce" />
+                          <div className={`w-16 h-16 mx-auto mb-3 bg-gradient-to-br ${getColorClasses(study.color)} rounded-2xl flex items-center justify-center group-hover/metric:scale-110 transition-transform duration-300`}>
+                            <TrendingUp className="w-8 h-8 text-white" />
                           </div>
                           <div className="text-3xl font-bold text-gray-900 mb-1 group-hover/metric:text-gray-700 transition-colors duration-300 animate-scale-in" style={{ animationDelay: `${idx * 200}ms` }}>{value}</div>
                           <div className="text-sm text-gray-600 capitalize group-hover/metric:text-gray-500 transition-colors duration-300">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
@@ -428,10 +417,6 @@ export default function CaseStudiesPage() {
       <section className="py-24 bg-gradient-to-br from-slate-50 to-gray-100 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 via-transparent to-slate-50/30"></div>
 
-        {/* Background particles */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-20 right-20 w-3 h-3 bg-slate-400/30 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-1/2 right-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float delay-500"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
@@ -455,8 +440,8 @@ export default function CaseStudiesPage() {
 
                   <div className="relative z-10">
                     <div className="flex items-start space-x-4 mb-6">
-                      <div className={`w-12 h-12 bg-gradient-to-br ${getColorClasses(preview.color)} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 animate-glow`}>
-                        <MapPin className="w-6 h-6 text-white group-hover:animate-pulse" />
+                      <div className={`w-12 h-12 bg-gradient-to-br ${getColorClasses(preview.color)} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                        <MapPin className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-800 transition-colors duration-300">
@@ -486,10 +471,6 @@ export default function CaseStudiesPage() {
 
       {/* Testimonials Carousel */}
       <section className="py-24 gradient-dark relative overflow-hidden">
-        {/* Background particles */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-20 right-20 w-3 h-3 bg-slate-400/30 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-1/2 right-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float delay-500"></div>
         <div className="absolute top-1/3 left-1/4 w-2 h-2 bg-green-400/30 rounded-full animate-particle-float delay-700"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -513,8 +494,8 @@ export default function CaseStudiesPage() {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-slate-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                   <div className="relative z-10">
-                    <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-orange-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 animate-glow">
-                      <Quote className="w-8 h-8 text-white group-hover:animate-pulse" />
+                    <div className="w-16 h-16 mx-auto mb-6 bg-blue-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Quote className="w-8 h-8 text-white" />
                     </div>
 
                     <blockquote className="text-lg text-gray-300 leading-relaxed mb-6 group-hover:text-gray-200 transition-colors duration-300 animate-fade-in-up delay-100">
@@ -544,10 +525,6 @@ export default function CaseStudiesPage() {
       <section className="py-24 bg-gradient-to-br from-slate-50 to-gray-100 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 via-transparent to-slate-50/30"></div>
 
-        {/* Background particles */}
-        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float"></div>
-        <div className="absolute bottom-20 right-20 w-3 h-3 bg-slate-400/30 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute top-1/2 right-10 w-2 h-2 bg-blue-400/30 rounded-full animate-particle-float delay-500"></div>
         <div className="absolute top-1/3 left-1/4 w-2 h-2 bg-green-400/30 rounded-full animate-particle-float delay-700"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -573,8 +550,8 @@ export default function CaseStudiesPage() {
                     <div className="absolute inset-0 bg-gradient-to-br from-transparent via-gray-50/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                     <div className="relative z-10">
-                      <div className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br ${getColorClasses(benefit.color)} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg animate-glow group-hover:shadow-xl animate-bounce-in`} style={{ animationDelay: `${index * 200}ms` }}>
-                        <Icon className="w-8 h-8 text-white group-hover:animate-pulse" />
+                      <div className={`w-16 h-16 mx-auto mb-6 bg-gradient-to-br ${getColorClasses(benefit.color)} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-xl`} style={{ animationDelay: `${index * 200}ms` }}>
+                        <Icon className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors duration-300">
                         {benefit.title}
@@ -598,12 +575,6 @@ export default function CaseStudiesPage() {
         {/* Animated Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/20 to-black/40"></div>
 
-        {/* Floating Particles */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-blue-400/60 rounded-full animate-particle-float"></div>
-        <div className="absolute top-40 right-20 w-3 h-3 bg-slate-400/60 rounded-full animate-particle-float delay-1000"></div>
-        <div className="absolute bottom-32 left-20 w-2 h-2 bg-blue-400/60 rounded-full animate-particle-float delay-500"></div>
-        <div className="absolute top-60 right-40 w-3 h-3 bg-green-400/60 rounded-full animate-particle-float delay-700"></div>
-        <div className="absolute bottom-40 right-60 w-4 h-4 bg-indigo-400/60 rounded-full animate-particle-float delay-300"></div>
 
         {/* Main gradient orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-float"></div>
@@ -618,10 +589,10 @@ export default function CaseStudiesPage() {
             Join the agencies already transforming emergency response with Plott Labs' cloud-native platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up delay-400">
-            <Button size="lg" className="text-lg px-10 py-6 bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-orange-500/25 animate-glow animate-pulse">
+            <Button size="lg" className="text-lg px-10 py-6 bg-blue-600 hover:bg-blue-700 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
               <Link href="/contact#contact-form">Start Your Transformation</Link>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-10 py-6 border-2 border-white hover:text-gray-900 hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-white/25 animate-glow">
+            <Button size="lg" variant="outline" className="text-lg px-10 py-6 border-2 border-white hover:text-gray-900 hover:scale-105 transition-all duration-300 hover:shadow-2xl">
               <Link href="/solutions">Explore Solutions</Link>
             </Button>
           </div>
